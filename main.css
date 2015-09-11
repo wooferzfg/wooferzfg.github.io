@@ -5,13 +5,52 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 2em 2em 4em;
-    max-width: 800px;
+    min-width: 800px;
+    padding-bottom: 1em;
     line-height: 1.5em;
     font-family: Raleway;
     color: #545454;
     background-color: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+#header {
+    background-image: url(Files/codeblurred.png);
+	height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+#headerText {
+    color: white;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    resize: vertical;
+    width: 100%;
+    text-align: center;
+}
+
+#title {
+    font-size: 250%;
+    line-height: 1.3em;
+}
+
+#menu {
+    text-align: center;
+}
+
+#about {
+    font-size: 150%;
+    line-height: 1.3em;
+}
+
+#description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 1000px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,12 +74,11 @@ b, strong {
 ul {
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
 }
 
 li {
-    float: left;
     margin-right: 2px;
+    display: inline-block;
 }
 
 a {
