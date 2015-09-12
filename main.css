@@ -77,6 +77,11 @@ body {
     height: 50px;
 }
 
+.projectTitle a {
+    text-decoration: none;
+    color: black;
+}
+
 .projectImage {
     display: block;
     padding: 0px;
