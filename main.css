@@ -16,8 +16,9 @@ body {
 
 #header {
     background-image: url(Files/codeblurred.png);
+    background-attachment: fixed;
     background-size: 100%;
-	height: 400px;
+	height: 600px;
     width: 100%;
     position: relative;
 }
@@ -33,7 +34,8 @@ body {
 }
 
 #title {
-    font-size: 250%;
+    font-size: 350%;
+    font-weight: 900;
     line-height: 1.3em;
 }
 
@@ -42,7 +44,7 @@ body {
 }
 
 #about {
-    font-size: 150%;
+    font-size: 225%;
     line-height: 1.3em;
 }
 
@@ -50,7 +52,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    padding: 0px 30px;
     max-width: 1000px;
 }
 
