@@ -17,7 +17,7 @@ document.onkeydown = function (evt)
         document.getElementById("music").play();
         document.getElementById("title").style.visibility = "hidden";
         document.getElementById("about").style.visibility = "hidden";
-        document.getElementById("header").style.backgroundImage = "url(Files/sujay.png)";
+        document.getElementById("header").style.backgroundImage = "url(files/sujay.png)";
         curKey++;
     }
 }
