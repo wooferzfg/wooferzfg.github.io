@@ -29,7 +29,6 @@ p {
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
-    resize: vertical;
     width: 100%;
     text-align: center;
 }
@@ -53,7 +52,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    padding: 0 10px;
     max-width: 1000px;
 }
 
