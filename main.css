@@ -67,8 +67,7 @@ p {
     display: inline-block;
     background-color: white;
     color: black;
-    width: 290px;
-    height: 420px;
+    width: 400px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -81,6 +80,7 @@ p {
 
 .projectTitle {
     display: block;
+    font-size: 1.2em;
     font-weight: 600;
     line-height: 50px;
     height: 50px;
@@ -94,7 +94,7 @@ p {
 .projectImage {
     display: block;
     padding: 0px;
-    height: 200px;
+    height: 266px;
     background-color: #454545;
 }
 
@@ -107,7 +107,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 170px;
+    height: 140px;
 }
 
 .descr-text {
