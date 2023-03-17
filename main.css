@@ -272,3 +272,9 @@ a {
     margin: 1em 0;
     max-width: 35em;
 }
+
+.puzzle-page-header {
+    font-size: 125%;
+    font-weight: bold;
+    margin: 0.67em 0;
+}
