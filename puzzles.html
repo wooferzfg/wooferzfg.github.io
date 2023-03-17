@@ -6,7 +6,7 @@ title: Logic Puzzles
     <span class="description-header-text">Logic Puzzles</span>
 </div>
 <div class="puzzles-list">
-    {% assign sorted_pages = (site.pages | sort: 'order' | reverse) %}
+    {% assign sorted_pages = site.pages | sort: 'order' | reverse %}
     {% for page in sorted_pages %}
         {% if page.layout == 'puzzle' %}
             <div class="puzzle">
