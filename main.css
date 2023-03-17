@@ -270,14 +270,16 @@ a {
 }
 
 .puzzle-description p {
-    margin: 1em 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
     max-width: 35em;
 }
 
 .puzzle-page-header {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin: 0.67em 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 .puzzle-description img {
