@@ -1,0 +1,4 @@
+title: wooferzfg
+baseurl: ""
+imagesurl: /files
+exclude: [vendor, Gemfile, Gemfile.lock, LICENSE]

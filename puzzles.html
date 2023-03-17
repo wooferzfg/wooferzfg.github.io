@@ -1,46 +1,27 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Logic Puzzles</title>
-    <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="./files/woofer.png">
-    <meta name="viewport" content="width=device-width">
-</head>
-
-<body>
-    <div class="description-header">
-        <span class="description-header-text">Logic Puzzles</span>
-    </div>
-    <div class="puzzles-list">
-        <div class="puzzle">
-            <div class="puzzle-image">
-                <a href="https://drive.google.com/file/d/1ysJQpJmHhVjFAwiKz5qN3M4kV9w8QMc0/view">
-                    <img src="files/puzzles/unchained.png"></img>
-                </a>
+---
+layout: default
+title: Logic Puzzles
+---
+<div class="description-header">
+    <span class="description-header-text">Logic Puzzles</span>
+</div>
+<div class="puzzles-list">
+    {% assign sorted_pages = (site.pages | sort: 'order' | reverse) %}
+    {% for page in sorted_pages %}
+        {% if page.layout == 'puzzle' %}
+            <div class="puzzle">
+                <div class="puzzle-image">
+                    <a href="{% if page.puzzle_url %}{{ page.puzzle_url }}{% else %}{{ page.url }}{% endif %}">
+                        <img src="{{ page.image | prepend: site.imagesurl }}"></img>
+                    </a>
+                </div>
+                <div class="puzzle-title">
+                    <a href="{% if page.puzzle_url %}{{ page.puzzle_url }}{% else %}{{ page.url }}{% endif %}">
+                        {{ page.title }}
+                    </a>
+                </div>
+                <div class="puzzle-author">by Jakhob and wooferzfg</div>
             </div>
-            <div class="puzzle-title">
-                <a href="https://drive.google.com/file/d/1ysJQpJmHhVjFAwiKz5qN3M4kV9w8QMc0/view">
-                    uN-Chained Puzzle Pack
-                </a>
-            </div>
-            <div class="puzzle-author">by Jakhob and wooferzfg</div>
-        </div>
-        <div class="puzzle">
-            <div class="puzzle-image">
-                <a href="puzzles/fibonacci_16.html">
-                    <img src="files/puzzles/fibonacci_16.png"></img>
-                </a>
-            </div>
-            <div class="puzzle-title">
-                <a href="./puzzles/fibonacci_16.html">
-                    Fibonacci 16
-                </a>
-            </div>
-            <div class="puzzle-author">by wooferzfg</div>
-        </div>
-    </div>
-</body>
-
-</html>
+        {% endif %}
+    {% endfor %}
+</div>
