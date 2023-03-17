@@ -276,6 +276,7 @@ a {
 .puzzle-page-header {
     font-size: 1.25em;
     font-weight: bold;
+    margin: 0.67em 0;
 }
 
 .puzzle-description img {
