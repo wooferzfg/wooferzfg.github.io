@@ -1,0 +1,24 @@
+---
+layout: puzzle
+title: Loop Nurikabe
+author: Jakhob and wooferzfg
+image: /puzzles/loop_nurikabe.png
+order: 30
+---
+<div class="puzzle-page-header">Rules</div>
+<p>Every cell is either water or land. All water cells must be orthogonally connected, and no 2x2 area may be entirely water. Groups of orthogonally connected land cells form islands, which do not touch orthogonally, but may touch diagonally.</p>
+<p>Draw a non-intersecting loop through the centers of some cells which passes through each island exactly once. The loop may only visit one cell in each island.</p>
+<p>If a clue is on a land cell, it indicates the size of its island. Every island must contain exactly one clue.</p>
+<p>If a clue is on a water cell, it indicates the number of cells visited by the water section of the loop that passes through the clue (i.e. how many water cells are visited by the loop between the previous island and the next island). Every water section of the loop must pass through exactly one clue.</p>
+<p>A "?" can represent any non-zero value.</p>
+
+<div class="puzzle-page-header">Example Puzzle</div>
+<p><a href="https://tinyurl.com/2qnrhz43">Play the Example on Penpa+</a></p>
+<p><a href="https://tinyurl.com/22zfzw8b">Play the Example on SudokuPad</a></p>
+<img src="{{ "/puzzles/loop_nurikabe_example.png" | prepend: site.imagesurl }}">
+
+<div class="puzzle-page-header">Puzzle Links</div>
+<p><a href="https://tinyurl.com/2yzxfbkl">Play on Penpa+</a></p>
+<p><a href="https://tinyurl.com/mv7ty2e8">Play on SudokuPad</a></p>
+
+<img src="{{ "/puzzles/loop_nurikabe.png" | prepend: site.imagesurl }}">
