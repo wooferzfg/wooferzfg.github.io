@@ -226,6 +226,7 @@ a {
 
 .puzzle-image a {
     display: flex;
+    width: 100%;
 }
 
 .puzzle-image img {
