@@ -115,7 +115,7 @@ li {
     max-width: 1000px;
 }
 
-.description .description-header {
+.description-header {
     margin-top: 60px;
     margin-bottom: 30px;
     text-align: center;
@@ -125,7 +125,7 @@ li {
     font-size: 2em;
 }
 
-.description .description-header-text {
+.description-header-text {
     background-color: #F8F8F8;
     padding: 0 15px;
 }
@@ -156,7 +156,8 @@ li {
     height: 50px;
 }
 
-.project-title a {
+.project-title a,
+.puzzle-title a {
     text-decoration: none;
     color: black;
 }
@@ -190,4 +191,84 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: #0083e8;
+}
+
+.puzzles-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.puzzle {
+    border: 1px solid #888888;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+}
+
+.puzzle-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.puzzle-author {
+    margin-top: 5px;
+}
+
+.puzzle-image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.puzzle-image a {
+    display: flex;
+}
+
+.puzzle-image img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+.puzzle-page-title {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8; 
+    line-height: 0.1em;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.puzzle-page-title-text {
+    background-color: #F8F8F8;
+    padding: 0 15px;
+}
+
+.puzzle-page-author-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.puzzle-description-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.puzzle-description {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+}
+
+.puzzle-description p {
+    margin: 1em 0;
+    max-width: 35em;
 }
