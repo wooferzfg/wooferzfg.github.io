@@ -11,7 +11,7 @@ title: Logic Puzzles
         {% if page.layout == 'puzzle' %}
             <div class="puzzle">
                 <div class="puzzle-image">
-                    <a href="{% if page.puzzle_url %}{{ page.puzzle_url }}{% else %}{{ page.url }}{% endif %}">
+                    <a {% if page.puzzle_url %}target="_blank"{% endif %} href="{% if page.puzzle_url %}{{ page.puzzle_url }}{% else %}{{ page.url }}{% endif %}">
                         <img src="{{ page.image | prepend: site.imagesurl }}"></img>
                     </a>
                 </div>
