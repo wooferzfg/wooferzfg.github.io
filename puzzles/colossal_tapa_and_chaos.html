@@ -1,0 +1,24 @@
+---
+layout: puzzle
+title: Colossal Tapa and Chaos
+author: KNT, Jakhob, and wooferzfg
+image: /puzzles/colossal_tapa_and_chaos.png
+order: 39
+---
+<p>This puzzle was inspired by tesseralis's <a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id=000BTK">Colossal Cave Sudoku</a> and Jesper's <a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id=000BD7">Chaos Construction: Numbered Regions #1</a>.</p>
+<div class="puzzle-page-header">Rules</div>
+<p>This puzzle is a combination of a 27x27 Tapa and a 9x9 Chaos Construction Sudoku with indexed regions. The two grids are linked together.</p>
+<p>Tapa: Shade some cells so that all shaded cells form one orthogonally connected area. Clues cannot be shaded, and represent the lengths of the blocks of consecutive shaded cells in the (up to) eight cells surrounding the clue. No 2x2 region may be entirely shaded. A “?” can represent any non-zero value.</p>
+<p>Sudoku: Divide the grid into regions, each consisting of 9 orthogonally connected cells. Each row, column, and region must contain the digits 1 to 9 once each. Every row, column, and region contains exactly one index cell. The digit in the index cell is the index of the region. Each region has a unique index from 1 to 9. If a cell with digit X in a region with index N contains an arrow, then the cell X steps away in the indicated direction belongs to the region with index N+1.</p>
+<p>For all cells in the Sudoku grid except the index cells, the digit in the cell must equal the number of unshaded cells in the corresponding 3x3 box in the Tapa grid. The digit in each index cell must NOT equal the number of unshaded cells in the corresponding 3x3 box in the Tapa grid.</p>
+
+<div class="puzzle-page-header">Example Puzzle</div>
+<p><a target="_blank" href="https://tinyurl.com/2otdmwfr">Play the Example on Penpa+</a></p>
+<p><a target="_blank" href="https://tinyurl.com/4nfpky2k">Play the Example on SudokuPad</a></p>
+<img src="{{ "/puzzles/tapa_and_chaos.png" | prepend: site.imagesurl }}">
+
+<div class="puzzle-page-header">Puzzle Links</div>
+<p><a target="_blank" href="https://tinyurl.com/yeyj72cy">Play on Penpa+</a></p>
+<p><a target="_blank" href="https://tinyurl.com/cfwk2s4z">Play on SudokuPad</a></p>
+
+<img src="{{ "/puzzles/colossal_tapa_and_chaos.png" | prepend: site.imagesurl }}">
